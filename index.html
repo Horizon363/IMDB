@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles.css">
+    <title>IMDB</title>
+</head>
+<body>
+    
+    <header>
+        <form  id="form">
+            <input type="text" placeholder="Search" id="search" class="search">
+        </form>
+    </header>
+    <div id="tags"></div>
+    <div id="myNav" class="overlay">
+
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      
+        <div class="overlay-content" id="overlay-content"></div>
+        
+        <a href="javascript:void(0)" class="arrow left-arrow" id="left-arrow">&#8656;</a> 
+        
+        <a href="javascript:void(0)" class="arrow right-arrow" id="right-arrow" >&#8658;</a>
+
+      </div>
+    <main id="main"></main>
+    <div class="pagination">
+        <div class="page" id="prev">Pagina Anterior</div>
+        <div class="current" id="current">1</div>
+        <div class="page" id="next">Siguiente Pagina</div>
+
+    </div>
+    <div id="root"></div>
+    <footer>
+      <p>Moviecity</p>
+    </footer>
+    <script type="module" src="/src/main.jsx"></script>
+    <script src="/src/script.mjs"></script>
+    
+</body>
+</html>
